@@ -2,11 +2,7 @@
 
 > 基于现有现有 vue-amap-search 项目修改，配合自己项目进行了修改，感谢作者 mactive 提供。
 
-> A Vue.js amap 高德地图搜索功能组件
-
-## Demo
-
-
+> A Vue.js amap 高德地图
 
 ## 如何使用
 
@@ -43,11 +39,14 @@ Vue.use(AmapSearch)
 html 中使用都是一样的,及得给amap-search设定宽和高,
 ```html
 <amap-search 
-  :searchCount="2"
+  :searchCount="5"
   :autoConfirm="false"
-  :useClick="true"
+  :useClick="false"
   :width="800"
   :height="340"
+  :defaultLng="31.12571"
+  :defaultLat="121.327522"
+  :dragEnable="false"
   @userInput="handleUserInput"
   @pickedLocation="handlePickedLocation">
 </amap-search>
@@ -65,6 +64,9 @@ html 中使用都是一样的,及得给amap-search设定宽和高,
 * useClick 是否开启用户单机地图, 默认 false 不开启 . 
 > 默认false, 用户点击地图没有反应, 只能搜索结果后拖动图标
 > 如果true,searchCount 会自动变成1
+* defaultLng, 设置地图经度
+* defaultLat, 设置地图纬度
+* dragEnable, 设置地图是否允许拖拽，默认是false
 
 
 ### Event

@@ -7,7 +7,9 @@
       width="100%"
       :height="340"
       :defaultLng="31.12571"
-      :defaultLat="121.327522">
+      :defaultLat="121.327522"
+      :dragEnable="false"
+      >
     </amap-search>
     <h3>高德gcj02 坐标系22</h3>
     <p>输入出现搜索结果, 地图上的点可以拖动, 拖动后的结果信息会出现在下方</p>

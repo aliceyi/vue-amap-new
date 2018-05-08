@@ -140,12 +140,12 @@ export var amapmixinApp = {
         /**
          * 初始化amap对象
          */
-        initAmap(domContainer:any, mapCenter:polygonPoint, icon?:String) {
+        initAmap(domContainer:any, mapCenter:polygonPoint, icon?:String, dragEnable?:Boolean) {
             let vm = this;
             vm.map = new AMap.Map(domContainer, {
                 resizeEnable: true,
                 zoom: 12,
-                dragEnable: false,
+                dragEnable: dragEnable,
                 center: mapCenter
             });
 

@@ -28,12 +28,12 @@ exports.amapmixinApp = {
         /**
          * 初始化amap对象
          */
-        initAmap: function (domContainer, mapCenter, icon) {
+        initAmap: function (domContainer, mapCenter, icon, dragEnable) {
             var vm = this;
             vm.map = new AMap.Map(domContainer, {
                 resizeEnable: true,
                 zoom: 14,
-                dragEnable: false,
+                dragEnable: dragEnable,
                 center: mapCenter
             });
             vm.marker = new AMap.Marker({
