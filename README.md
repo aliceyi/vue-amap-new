@@ -2,11 +2,7 @@
 
 > 基于现有现有 vue-amap-search 项目修改，配合自己项目进行了修改，感谢作者 mactive 提供。
 
-> A Vue.js amap 高德地图搜索功能组件
-
-## Demo
-
-
+> A Vue.js amap 高德地图
 
 ## 如何使用
 
