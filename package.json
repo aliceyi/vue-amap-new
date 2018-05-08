@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alice.yi/vue-amap-new.git"
+    "url": "https://github.com/aliceyi/vue-amap-new.git"
   },
   "bugs": {
-    "url": "https://github.com/alice.yi/vue-amap-new/issues"
+    "url": "https://github.com/aliceyi/vue-amap-new/issues"
   },
   "jsnext:main": "dist/lib/main.js",
   "jspm": {
